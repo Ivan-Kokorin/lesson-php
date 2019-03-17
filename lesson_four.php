@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title><? echo "$title" ?></title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
 <?php
 	
 	/*
@@ -34,28 +42,21 @@ width. При загрузке изображения необходимо де�
 	*/
 
 
-function create_thumbnail($path){
-	$destination_path = 'resize/20120522050128!Comic_Book_Guy.png';
-	$info = getimagesize($path);
-	$oldwidth = $info[0];
-	$oldheight = $info[1];
-	$newwidth = $info[0] / 2;
-	$newheight = $info[1] / 2;
-	if ($info['mime'] == 'image/png') {
-		$src = imagecreatefrompng($path);
-		$destination_resource=imagecreatetruecolor($newwidth, $newheight);
-		imagealphablending($destination_resource, false);
-		imagesavealpha($destination_resource, true);
-		imagecopyresampled($destination_resource, $src, 0, 0, 0, 0, $newwidth, $newheight, $oldwidth, $oldheight);
-		imagepng($destination_resource, $destination_path);
-		}
-	}
+
 //create_thumbnail($path = 'image/20120522050128!Comic_Book_Guy.png');
 //$path = 'image/20120522050128!Comic_Book_Guy.png';
 
 ?>
 
 <form enctype="multipart/form-data" method="POST" action="/handle_image.php">
-	<input type="file" name="upload_file" multiple accept="image/jpeg,image/png">
+	<input type="file" name="upload_file" multiple>
 	<input type="submit" value="Отправить"></p>
 </form>
+
+
+<a href=image/926355185.png><img src = resize/361539793.png class='galery_photo'></a>
+<a href=image/270717335.png><img src = resize/55829530.png class='galery_photo'></a>
+<a href=image/798690425.png><img src = resize/85787062.png class='galery_photo'></a>
+<a href=image/86786553.png><img src = resize/759353275.png class='galery_photo'></a>
+<a href=image/953735875.png><img src = resize/792312640.png class='galery_photo'></a>
+<a href=image/392049943.png><img src = resize/438817696.png class='galery_photo'></a>

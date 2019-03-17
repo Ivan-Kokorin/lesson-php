@@ -23,3 +23,8 @@ nav ul li{
 	left: -41px;
 	opacity: 1;
 }
+.galery_photo{
+	width: 100px;
+	display: inline-block;
+	margin-right: 20px;
+}
