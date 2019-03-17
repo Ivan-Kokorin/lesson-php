@@ -1,0 +1,25 @@
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 7px;
+	border: 1px solid #bbb;
+	background-color: #ccc;
+	margin-right: -4px;
+}
+.nav__cat{
+	position: relative;
+}
+.nav__item-cat{
+	position: absolute;
+	display: flex;
+	opacity: 0;
+	flex-direction: column;
+	left: 0;
+	top: 50px;
+	transition: 0.5s;
+}
+.nav__cat:hover > .nav__item-cat{
+	display: flex;
+	left: -41px;
+	opacity: 1;
+}
