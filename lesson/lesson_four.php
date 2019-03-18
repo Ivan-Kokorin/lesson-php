@@ -53,10 +53,7 @@ width. При загрузке изображения необходимо де�
 	<input type="submit" value="Отправить"></p>
 </form>
 
-
-<a href=image/926355185.png><img src = resize/361539793.png class='galery_photo'></a>
-<a href=image/270717335.png><img src = resize/55829530.png class='galery_photo'></a>
-<a href=image/798690425.png><img src = resize/85787062.png class='galery_photo'></a>
-<a href=image/86786553.png><img src = resize/759353275.png class='galery_photo'></a>
-<a href=image/953735875.png><img src = resize/792312640.png class='galery_photo'></a>
-<a href=image/392049943.png><img src = resize/438817696.png class='galery_photo'></a>
+<a href=image/173494103.jpg><img src = resize/415541357.jpg class='galery_photo'></a>
+<a href=image/761186046.png><img src = resize/487591185.png class='galery_photo'></a>
+<a href=image/823431343.gif><img src = resize/62813805.gif class='galery_photo'></a>
+<a href=image/449472549.gif><img src = resize/904250702.gif class='galery_photo'></a>
