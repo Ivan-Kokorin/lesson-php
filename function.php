@@ -42,4 +42,6 @@ function word_visit_form($counter_num){
 		return ' просмотров';
 	}
 }
+
+
 ?>

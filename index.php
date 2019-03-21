@@ -4,6 +4,7 @@
 	include "lesson/lesson_two.php";
 	include "lesson/lesson_three.php";
 	include "lesson/lesson_four.php";
-	*/
 	include "lesson/lesson_five.php";
+	*/
+	include "lesson/lesson_six.php";
 ?>
