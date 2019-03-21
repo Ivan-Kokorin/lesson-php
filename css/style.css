@@ -28,3 +28,18 @@ nav ul li{
 	display: inline-block;
 	margin-right: 20px;
 }
+
+.detail-vision{
+	margin: 0 auto;
+	width: 500px;
+}
+.detail-vision__image_detail{
+	margin: 100px auto 0;
+	height: 300px;
+	display: block;
+}
+.detail-vision__counter{
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: 700;
+}

@@ -26,8 +26,9 @@ if ($image_info["size"] > 1048577){
 	$link_name = "image/" . $name_image;
 	$link_name_resize = "resize/" . $name_image_resize;
 	$size = $image_info["size"];
-	$result = mysqli_query($connection, "INSERT INTO `images_galery` (`name`, `link_name`, `link_name_resize`, `size`) VALUES ('$name_image', '$link_name', '$link_name_resize', '$size')");
-	//header("Location: http://learning.ru/");
+	$result = mysqli_query($connection, "INSERT INTO `main_galery` (`name_image`, `link_image`, `link_image_resize`, `size`) VALUES ('$name_image', '$link_name', '$link_name_resize', '$size')");
+	mysqli_close($connection);
+	header("Location: http://ikokorin.studymmit.ru/");
 }
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-	
+	include('connection_db.php');
 
 ?>
 <!DOCTYPE html>
@@ -14,3 +14,10 @@
 	<input type="file" name="upload_file" multiple>
 	<input type="submit" value="Отправить"></p>
 </form>
+
+<?php
+	$res_query = mysqli_query($connection, "SELECT * FROM `main_galery` ORDER BY `visit_counter` DESC");
+	while($row = mysqli_fetch_assoc($res_query))
+		echo '<a href="details.php?id=' . $row['id_image'] . '"><img class="galery_photo" src=' . $row['link_image_resize'] . ' alt=' . $row['name_image'] . '></a>' . "\n";
+	mysqli_close($connection);
+?>

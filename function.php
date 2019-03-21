@@ -32,4 +32,14 @@ function create_thumbnail($path, $destination_path){
 		return imagegif($destination_resource, $destination_path);
 	}
 }
+
+function word_visit_form($counter_num){
+	if ($counter_num % 10 == 1 && $counter_num != 11){
+		return ' просмотр';
+	}elseif ($counter_num % 10 >= 2 && $counter_num % 10 <= 4 && intdiv($counter_num, 10) != 1) {
+		return ' просмотра';
+	}else{
+		return ' просмотров';
+	}
+}
 ?>
